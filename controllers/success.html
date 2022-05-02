@@ -1,0 +1,64 @@
+
+<html>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </header>
+    <body>
+		<div class="success-page">
+			<img  src="http://focusongoal.com/payments/success.png" class="center" alt="" />
+			<h2>Payment Was Processed Successfully !</h2>
+			<a onclick="gotoMerchant();" class="btn-view-orders">View Orders</a>
+		</div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    function gotoMerchant() {
+      var url = 'http://goachievers.in/#/mytest';
+      location.replace(url);
+    }
+</script>
+
+<style>
+
+	a:hover {
+		cursor:pointer;
+	}
+
+    .success-page {
+		max-width:300px;
+		display:block;
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		top: 20%;
+		transform: perspective(1px) translateY(50%)
+	}
+
+	.success-page img {
+		max-width:62px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.btn-view-orders {
+		display: block;
+		border:1px solid #3bb54a;
+		width:100px;
+		margin: 0 auto;
+		margin-top: 45px;
+		padding: 10px;
+		color:#fff;
+		background-color:#3bb54a;
+		text-decoration: none;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		color:#3bb54a;
+		margin-top: 25px;
+	}
+	a {
+		text-decoration: none;
+	}
+</style>

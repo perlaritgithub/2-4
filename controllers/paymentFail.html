@@ -1,0 +1,64 @@
+
+<html>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </header>
+    <body>
+        <div class="success-page">
+            <img  src="http://focusongoal.com/payments/fail.png" class="center" alt="" />
+            <h2>Payment Failed !</h2>
+            <a onclick="gotoMerchant();" class="btn-view-orders">try Again</a>
+        </div>
+    </body>
+</html>
+    
+    <script type="text/javascript">
+        function gotoMerchant() {
+          var url = 'http://goachievers.in/#/purchase';
+          location.replace(url);
+        }
+    </script>
+    
+    <style>
+    
+        a:hover {
+            cursor:pointer;
+        }
+    
+        .success-page {
+            max-width:300px;
+            display:block;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            top: 20%;
+            transform: perspective(1px) translateY(50%);
+        }
+    
+        .success-page img {
+            max-width:62px;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        .btn-view-orders{
+            display: block;
+            border: 1px solid #f34442;
+            width: 48%;
+            margin: 0 auto;
+            margin-top: 45px;
+            padding: 10px 0px;
+            color: #fff;
+            background-color: #f34442;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+    
+        h2 {
+            color:#f34442;
+            margin-top: 25px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
